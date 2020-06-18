@@ -10,10 +10,12 @@ class CreateTableAtendimento extends Migration
     {
         Schema::create('atendimento', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_pet');
-            $table->integer('data_atendimento');
-            $table->text('descricao');
+            $table->unsignedBigInteger('pet_id');
+            $table->date('data_atendimento');
+            $table->text('descricao')->nullable();
             $table->timestamps();
+            
+            $table->foreign('pet_id')->references('id')->on('pets')->onDelete('cascade');;
         });
     }
 
