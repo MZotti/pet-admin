@@ -79,7 +79,7 @@ Resposta no formato JSON<br>
             <td>especie</td> 
             <td>String</td>    
             <td>Sim</td>   
-            <td>Espécie do pet representado pelo caracter. "C" para cão e "G" para gato.</td>
+            <td>Espécie do pet representado pelo caractér. "C" para cão e "G" para gato.</td>
         </tr>
     </body>
 </table>
@@ -114,7 +114,7 @@ Resposta no formato JSON<br>
             <td>especie</td> 
             <td>String</td>    
             <td>Sim</td>   
-            <td>Espécie do pet representado pelo caracter. "C" para cão e "G" para gato.</td>
+            <td>Espécie do pet representado pelo caractér. "C" para cão e "G" para gato.</td>
         </tr>
     </body>
 </table>
