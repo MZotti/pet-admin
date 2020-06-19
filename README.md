@@ -27,6 +27,7 @@ Resposta no formato JSON<br>
         </tr>
     </body>
 </table>
+<br>Os parâmetros devem ser passador por querystring<br>
 <br>
 <b>Exibição</b> <br>
 Endpoint: /api/pets/{id}<br>
@@ -113,6 +114,7 @@ Resposta no formato JSON<br>
         </tr>
     </body>
 </table>
+<br>Os parâmetros devem ser passador por querystring<br>
 <br>
 <b>Remoção</b> <br>
 Endpoint: /api/pets/{id}<br>
@@ -159,6 +161,7 @@ Resposta no formato JSON<br>
         </tr>
     </body>
 </table>
+<br>Os parâmetros devem ser passador por querystring<br>
 <br>
 <b>Exibição</b> <br>
 Endpoint: /api/atendimentos/{id}<br>
@@ -251,6 +254,7 @@ Resposta no formato JSON<br>
         </tr>
     </body>
 </table>
+<br>Os parâmetros devem ser passador por querystring<br>
 <br>
 <b>Remoção</b> <br>
 Endpoint: /api/atendimentos/{id}<br>
