@@ -1,3 +1,5 @@
+Configurar o arquivo .env para utilizar o MySql e executar as migrations.
+
 Segue abaixo a documentação para a utilização da API.<br><br>
 
 ## Pets
