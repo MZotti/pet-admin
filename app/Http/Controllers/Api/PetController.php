@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Api\ApiMessages;
 use App\Http\Controllers\Controller;
 use App\Pet;
+use Illuminate\Http\Request;
 use App\Http\Requests\PetRequest;
 
 class PetController extends Controller
@@ -16,9 +17,16 @@ class PetController extends Controller
         $this->pet = $pet;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $pet = $this->pet->paginate('10');
+        $pet = $this->pet;
+
+        if($request['nome']){
+            $nome = str_replace(' ', '%', $request['nome']);
+            $pet = Pet::where('nome', 'LIKE', "%$nome%")->paginate('10');
+        }else{
+            $pet = $this->pet->paginate('10');
+        }
 
         return response()->json($pet, 200);
     }

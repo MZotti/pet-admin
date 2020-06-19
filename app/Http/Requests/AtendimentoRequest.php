@@ -15,7 +15,7 @@ class AtendimentoRequest extends FormRequest
     {
         return [
             'pet_id' => ['required', 'exists:pets,id'],
-            'data_atendimento' => ['required', 'date']
+            'data_atendimento' => ['required', 'date', 'after:yesterday']
         ];
     }
 
@@ -26,6 +26,7 @@ class AtendimentoRequest extends FormRequest
             'pet_id.exists' => 'O ID do pet informado não existe.',
             'data_atendimento.required'  => 'O campo ":attribute" é obrigatório.',
             'data_atendimento.date'  => 'O campo ":attribute" precisa estar no formato: Y-m-d.',
+            'data_atendimento.after'  => 'O campo ":attribute" precisa ser maior ou igual à data de hoje.',
         ];
     }
 }

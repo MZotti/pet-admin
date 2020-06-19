@@ -57,12 +57,12 @@ class AtendimentoController extends Controller
         }
     }
 
-    public function update(Request $request, $id)
+    public function update(AtendimentoRequest $request, $id)
     {
         $data = $request->all();
 
         try{
-            $atendimento = $this->product->findOrFail($id);
+            $atendimento = $this->atendimento->findOrFail($id);
             $atendimento->update($data);
 
             return response()->json([
