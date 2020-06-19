@@ -1,3 +1,5 @@
+Segue abaixo a documentação para a utilização da API.<br><br>
+
 ## Pets
 
 <b>Listagem</b> <br>
